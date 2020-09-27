@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:if="${flag=='yes'}">显示判断正确</h1>
+
+<h1 th:unless="${flag=='no'}">显示判断错误</h1>
+
+<div th:switch="${menu}">
+    <p th:case="'admin'">显示</p>
+    <p th:case="${manager}">不显示</p>
+</div>
+
+</body>
+</html>
