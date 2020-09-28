@@ -11,6 +11,10 @@ import java.util.List;
 @Controller
 public class FirstThymeleafController {
 
+    public void test(){
+        System.out.println("你好啊");
+    }
+
     @GetMapping("/indexPage")
     public String indexPage(Model model){
         String aa="你好，欢迎";
